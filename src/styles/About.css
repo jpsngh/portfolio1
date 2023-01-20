@@ -1,0 +1,55 @@
+.about2{
+    width: 100%;
+    align-items: center;
+    font-family: "Arial", sans-serif;
+    background-color: #3CAEA3;
+     
+      width: 100%;
+      height: calc(100vh - 100px);
+     
+      align-items: center;
+      text-align: center;
+
+      color: #f0f0f0;
+    }
+    .details{
+    align-items: center;
+    
+  }
+
+  .details svg{
+    float: right;
+  }
+  @media only screen and (max-width: 1300px) {
+    .details {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .about2 p {
+      font-size: 15px;
+    }
+  }
+  @media only screen and (min-width: 900px) {
+    .about2 p {
+      font-size: 25px;
+    }
+  }
+  .button2 {
+    font-size: 22px;
+  }
+  
+  button {
+    margin: 15px;
+    background-color: #3CAEA3;
+    border-top: white;
+    border-left: #f0f0f0;
+    border-right: #f0f0f0;
+    
+    font-size: 20px;
+    
+  }
+  a{
+    color: white;
+  }
