@@ -12,6 +12,8 @@
 
       color: #f0f0f0;
     }
+
+
     .details{
     align-items: center;
     
@@ -29,27 +31,24 @@
   @media only screen and (max-width: 600px) {
     .about2 p {
       font-size: 15px;
+     
     }
   }
-  @media only screen and (min-width: 900px) {
-    .about2 p {
-      font-size: 25px;
-    }
+  p{
+    font-size: 25px;
   }
   .button2 {
     font-size: 22px;
   }
   
-  button {
-    margin: 15px;
-    background-color: #3CAEA3;
-    border-top: white;
-    border-left: #f0f0f0;
-    border-right: #f0f0f0;
+  .button2 {
+    margin: 10px;
     
-    font-size: 20px;
+  
+   color:white;
+    
+    border-radius: 90%;
+
     
   }
-  a{
-    color: white;
-  }
+ 

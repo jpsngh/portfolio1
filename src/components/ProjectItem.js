@@ -15,7 +15,7 @@ const ProjectItem = ({image,name,desc,tech,align,icon}) => {
        contentStyle={{ borderTop: "2px solid  red" }} icon={icon}  > 
     <Chip label={tech.map((key)=>(key +","))}> </Chip>
       <h3>{name}</h3> 
-      <img src={image} alt='' height="20px"/> 
+      <img src={image} alt='' width="100px"/> 
       <p>{desc}</p>
 
     </VerticalTimelineElement></VerticalTimeline>

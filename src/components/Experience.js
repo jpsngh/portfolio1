@@ -54,7 +54,7 @@ const Experience = () => {
           icon={<SchoolOutlinedIcon></SchoolOutlinedIcon>}
           contentStyle={{ borderTop: "3px solid  red" }}
         >
-          <h3> Mobile Application Developer</h3>
+          <h3> Mobile Application Development</h3>
           <h4>
             <LocationOnOutlinedIcon> </LocationOnOutlinedIcon> Canada
           </h4>

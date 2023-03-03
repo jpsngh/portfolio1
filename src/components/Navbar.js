@@ -7,6 +7,7 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import Button from '@mui/material/Button';
+import MarkEmailUnreadIcon from '@mui/icons-material/MarkEmailUnread';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
@@ -30,8 +31,9 @@ const Navbar = () => {
         <div className='links'>
   
         <Link color="inherit" className='exp-link' to="/"> Home </Link>
-  <Link  color="primary" variant="inherit" className='project-link' to="/projects"> Projects </Link>
-      
+        {location.pathname === "/" ?
+  <Link  color="primary" variant="inherit" className='project-link' to="/projects"> Projects </Link>:""}
+  <a className='gmail' href="mailto:jpatdesk@gmail.com"> <MarkEmailUnreadIcon ></MarkEmailUnreadIcon> </a>
   </div>
   
    

@@ -9,6 +9,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Experience from "./Experience.js"
 import MarkEmailUnreadIcon from '@mui/icons-material/MarkEmailUnread';
 import About from './About';
+import Contact from './Contact';
 const Home = () => {
   return (
     <div className='home'>
@@ -18,65 +19,82 @@ const Home = () => {
                 Singh </h2> 
 
         <div className='prompt'> 
-       <p> Full Stack Developer</p>
-       <a href="https://github.com/jpsngh">   <GitHubIcon></GitHubIcon> </a>
+       <p className='animation1'> Full Stack Developer</p>
+
+       <a className='github' href="https://github.com/jpsngh">   <GitHubIcon></GitHubIcon> </a>
         <a href="https://linkedin.com/in/jpsngh">  <LinkedInIcon></LinkedInIcon> </a>
-         <a href="mailto:jpatdesk@gmail.com"> <MarkEmailUnreadIcon ></MarkEmailUnreadIcon> </a>
+
         
           </div>
         </div>
         <Experience></Experience>
         <About></About>
+     
         <div className='skills'>
-        <div class="wrapper">
-  <h2>SKILLS </h2>
-  <div class="pricing-table">
-    <div class="pricing-box">
-
-      <span class="price">Client Side</span>
+        <div className="wrapper">
+  <h2 className='skill'>SKILLS </h2>
+  <div className='pricing-table' >
+    <div className="pricing-box">
+  
+      <span className="price">Client Side</span>
 
       <ul>
         <li>HTML</li>
-        <li>Css</li>
+        <li>CSS</li>
         <li>Material UI</li>
         <li>BootStrap</li>
-        <li>Vanilla JS</li>
+        <li> JavaScript</li>
         <li>React JS</li>
-        <li>Redux</li>
+        
       </ul>
     </div>
-    <div class="pricing-box">
+    <div className="pricing-box">
      
-      <span class="price"> Server Side</span>
+      <span className="price"> Server Side</span>
     
  
     
       <ul>
         <li>NodeJS</li>
-        <li>Express</li>
+        <li>Express Js</li>
+        <li>FireBase</li>
         <li>MongoDb</li>
         <li>MySql</li>
       </ul>
     </div>
-    <div class="pricing-box ">
+    <div className="pricing-box ">
       
-      <span class="price">Other</span>
+      <span className="price">Other</span>
 
 
       <ul>
-        <li>Java</li>
-        <li>Python</li>
+       
         <li>GIT</li>
-        <li>C++</li>
-        <li>TypeScript</li>
-        <li>C</li>
+        <li>GitHub</li>
+        <li>Redux</li>
+        <li>Context API</li>
+        <li>Java</li>
       </ul>
     </div>
   </div>
 </div>
+
         </div>
+      <div className='tools'> <h1>Tools</h1>
+     
+      <div className="tools-list">
+      <ul >
+       <li> IDE : Visual Studio Code / Atom </li>
+       <li> Project Management : JIRA </li>
+       <li> Version Control : GIT </li>
+       <li> Operating System : MACOS,Windows,Linux </li>
+      </ul>
+      </div>
+
+       </div>
       
     </div>
+    
   )
 }
 

@@ -16,6 +16,7 @@
     text-align: center;
     background-color: #21325e;
     color: #f0f0f0;
+    flex-shrink: 2;
   }
   
   .about h2 {
@@ -29,13 +30,23 @@
     width: 40%;
     font-size: 30px;
   }
-  .prompt svg {
+  .prompt svg  {
     font-size: 60px;
     padding: 30px;
     margin-bottom: 60px;
     color: white;
-  }
   
+  }
+  .prompt .github svg{
+    animation-name: hide-hide;
+    animation-duration: 40s;
+      animation-timing-function: linear;
+  
+      animation-iteration-count: infinite;
+      animation-direction:normal;
+      
+
+  }
   .skills {
     font-size: 35px;
     width: 100%;
@@ -58,11 +69,12 @@
     font-size: 20px;
   }
   
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 900px) {
     .about h2 {
       font-size: 40px;
     }
   
+   
     .about .prompt {
       margin-top: 10px;
       font-size: 20px;
@@ -174,4 +186,54 @@
       align-self: top;
     }
   }
-  
+  .tools {
+    display: flex;
+    flex-direction: column;
+    color: palevioletred;
+  }
+  .tools .tools-list{
+    display: flex;
+    flex-direction: column;
+ 
+
+    color: #000;
+    font-size: larger;
+  }
+  ul {
+    list-style-type: none;
+  }
+  ul li{
+    margin: 25px;
+  }
+  .animation{
+
+  }
+ 
+  @keyframes show-hide {
+    0% {
+      opacity : 1;
+    }
+   50%{
+    opacity: 0;
+   }
+    100% {
+      opacity: 0;
+    }
+  }
+  .animation1{
+   
+   
+  }
+
+  @keyframes hide-hide {
+    0% {
+      opacity : 0;
+    }
+    50%{
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }

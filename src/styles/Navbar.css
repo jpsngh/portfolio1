@@ -1,16 +1,51 @@
 .navbar {
+  display: flex;
   width: 100%;
   height: 100px;
   background: #21325e;
 }
 
 .links {
-  width: 100%;
+  width: 150%;
   height: 100%;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   color: white;
+
+
+
+}
+
+@keyframes hide-hide {
+  0% {
+ rotate: 0deg;
+  }
+  50%{
+  rotate:180deg;
+  }
+
+  100% {
+  rotate:360deg;
+   
+  }
+}
+.links .gmail{
+  
+flex-basis: 300%;
+display: flex;
+flex-direction: row-reverse;
+flex-wrap: wrap;
+flex-shrink: 300%;
+
+    
+
+}
+@media only screen and (max-width: 900px) {
+  .links .gmail{
+    font-size: 40px;
+  }
 }
 
 .navbar a {
@@ -18,7 +53,10 @@
   text-decoration: none;
   margin: 20px;
   font-size: 25px;
+  
 }
+
+
 
 .toggleButton {
   width: 100%;
@@ -40,18 +78,27 @@
 }
 
 #open {
-  height: 100vh;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ 
 }
 
 #open .links {
   flex-direction: column;
-  justify-content: flex-start;
-  margin-top: 100px;
+
+  margin-top: 50px;
+
+ 
 }
 
 #open a {
   width: 100%;
   text-align: center;
+}
+#open .gmail {
+  display: block;
 }
 
 @media only screen and (max-width: 900px) {
@@ -63,6 +110,8 @@
 @media only screen and (max-width: 600px) {
   .toggleButton {
     display: flex;
+    justify-content: flex-start;
+    width: 10px;
   }
   #close a {
     display: none;
@@ -86,7 +135,5 @@
     height: 100px;
   }
 
-  #open .links {
-    flex-direction: row;
-  }
+ 
 }
